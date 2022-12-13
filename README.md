@@ -5,7 +5,8 @@ Project Manager
 ## Setup
 
 ### Instalar dependencias
-Instalar todas las dependencias del proyecto: `make setup`
+Instalar todas las dependencias del proyecto:
+- `make setup`
 
 ### Tests
 Para comprobar que todo está correctamente configurado, ejecutar los tests:
@@ -37,8 +38,8 @@ relacionada con un grupo de proyectos en ProjectCollection.
 Aunque la algoritmia no diría que es mi punto fuerte he intentado dejar el código lo más claro posible. Aun así voy a
 intentar explicar el proceso que he seguido.
 
-Para poder saber los proyectos con mejor rentabilidad mi approach ha sido todas las combinaciones posibles de proyectos
-que se pueden realizar. Por ejemplo, con los datos de ejemplo, estás son las posibles combinaciones:
+Para poder saber los proyectos con mejor rentabilidad mi approach ha sido obtener todas las combinaciones posibles de
+proyectos que se pueden realizar. Por ejemplo, con los datos de ejemplo, estás son las posibles combinaciones:
 - Molina, Mijas (32000)
 - Tenerife, Arturo (26000)
 - Tenerife, Mijas (25000)
