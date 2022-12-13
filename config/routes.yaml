@@ -1,0 +1,4 @@
+get-more-profitable-projects-controller:
+    path: /projects
+    controller: App\Infrastructure\Project\Http\GetMoreProfitableProjectsController
+    methods: [GET]

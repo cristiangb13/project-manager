@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  php-project-manager-service:
+    container_name: php-project-manager-service
+    build: docker/fpm
+    volumes:
+      - ./:/app
+    working_dir: /app
+    env_file:
+      - .env
+
+  nginx-project-manager-service:
+    container_name: nginx-project-manager-service
+    image: nginx:latest
+    ports:
+      - "8000:80"
+    volumes:
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    depends_on:
+      - php-project-manager-service
